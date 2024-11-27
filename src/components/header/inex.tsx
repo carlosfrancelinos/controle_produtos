@@ -2,7 +2,7 @@ import "./styles.css";
 export default function Header() {
     return (
         <div className="container_header">
-            <h1>Controle de Produtos</h1>
+            <h1>Azamon</h1>
 
             <ul>
                 <li>Produtos</li>
