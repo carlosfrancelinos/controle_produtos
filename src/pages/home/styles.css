@@ -1,0 +1,23 @@
+.container_home {
+
+}
+
+.container_home .list_cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.float_button {
+    background: #f9ca24;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 30px;
+    position: absolute;
+    right: 30px;
+    box-shadow: 23px 10px 15px -3px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,12 @@
+.container_header {
+    background: #f9ca24;
+    display: flex;justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.container_header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
