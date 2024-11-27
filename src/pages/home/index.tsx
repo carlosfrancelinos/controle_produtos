@@ -1,6 +1,8 @@
+import {useEffect} from "react";
 import Header from "../../components/header/inex.tsx";
 import "./styles.css";
 import Card from "../../components/card";
+import axios from "axios";
 
 const products = [
     {
@@ -33,6 +35,15 @@ const products = [
     }
 ]
 export default function App() {
+    async function getProducts() {
+        const response = await axios.get("https://dummyjson.com/products");
+        console.log(response.data.products);
+    }
+
+    useEffect(() => {
+        getProducts();
+    }, []);
+
     return (
         <div className="container_home">
             <Header />
