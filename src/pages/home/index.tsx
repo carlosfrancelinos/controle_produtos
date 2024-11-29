@@ -5,7 +5,7 @@ import Card from "../../components/card";
 import Modal from 'react-modal';
 import axios from "axios";
 
-interface Produto {
+export interface Produto {
     id: string;
     title: string;
     price: string;
@@ -88,6 +88,7 @@ export default function App() {
                 {produtos.map((product) => (
                     <Card
                         key={product.id}
+                        id={product.id}
                         title={product.title}
                         images={product.images[0]}
                         brand={product.brand}
